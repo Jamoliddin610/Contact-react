@@ -94,30 +94,30 @@ class Builder extends Component {
             let arr = []
             this.state.newList.map((elem, i) => {
                 if (elem.relative === 'relative') {
-                    newArr.push(elem)
+                    arr.push(elem)
                 }
             })
-            this.setState({ listContact: [...newArr] })
+            this.setState({ listContact: [...arr] })
         }
 
         if (e.target.id=== 'friends') {
             let arr = []
             this.state.newList.map((elem, i) => {
                 if (elem.relative === 'friends') {
-                    newArr.push(elem)
+                    arr.push(elem)
                 }
             })
-            this.setState({ listContact: [...newArr] })
+            this.setState({ listContact: [...arr] })
         }
 
         if (e.target.id === 'workmates') {
             let arr = []
             this.state.newList.map((elem, i) => {
                 if (elem.relative === 'workmates') {
-                    newArr.push(elem)
+                    arr.push(elem)
                 }
             })
-            this.setState({ listContact: [...newArr] })
+            this.setState({ listContact: [...arr] })
         }
     }
 
